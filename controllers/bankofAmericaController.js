@@ -18,7 +18,7 @@ const fetchBankofAmerica = async (req, res) => {
 };
 
 // API: Create a new Bank of America's Card
-const createBankofAmerica = async (req, res) => {
+const createBankofAmericaCard = async (req, res) => {
     const { nameOfBank, nameOfCard, annualFee, rewardRate, introOffer, recommendedCreditScore } = req.body;
 
     const newBankofAmerica = await BankofAmerica.create({
@@ -34,7 +34,7 @@ const createBankofAmerica = async (req, res) => {
 };
 
 // API: Update Bank of America's Card Information 
-const updateBankofAmerica = async (req, res) => {
+const updateBankofAmericaCard = async (req, res) => {
     const bankofAmericaId = req.params.id;
     const { nameOfBank, nameOfCard, annualFee, rewardRate, introOffer, recommendedCreditScore } = req.body;
 
@@ -67,7 +67,7 @@ const getNoAnnualFeeCard = async (req, res) => {
 };
 
 // API: Delete Bank of America's Card Information 
-const deleteBankofAmerica = async (req, res) => {
+const deleteBankofAmericaCard = async (req, res) => {
     const bankofAmericaId = req.params.id;
 
     await BankofAmerica.deleteOne({ _id: bankofAmericaId });
@@ -78,8 +78,8 @@ const deleteBankofAmerica = async (req, res) => {
 module.exports = {
     fetchAllBankofAmericas,
     fetchBankofAmerica,
-    createBankofAmerica,
-    updateBankofAmerica,
+    createBankofAmericaCard,
+    updateBankofAmericaCard,
     getNoAnnualFeeCard,
-    deleteBankofAmerica
+    deleteBankofAmericaCard
 };

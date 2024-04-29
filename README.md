@@ -107,9 +107,13 @@
 |:white_check_mark:| Commit frequently to the git repository. | 5% |
 |:white_check_mark:| Level of effort displayed in creativity and user experience. | 5% |
 
-## Bonus 🎁
+## Bonus 🎁🖨
 
 | Status    | Requirement                  | Weight    | 
 |-----------|------------------------------|-----------|
 |:white_check_mark:| Use Mongoose to implement your application. | +1 |
 
+## License 🖨
+
+Copyright © 2024, [Hannah Moon](https://github.com/Hannah-Moon/).
+Released under the [MIT License](LICENSE).
