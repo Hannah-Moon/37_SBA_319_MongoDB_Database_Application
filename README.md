@@ -1,17 +1,17 @@
 # SBA 319: MongoDB Database Application <br/>
-### : Best Credit Card in 2024
+### : Is this the best credit card for me in 2024?
 
 
 <div align="center">
-<img width="500" alt="image" src="assets/creditCard.jpg">
+<img width="500" alt="image" src="assets/creditCard.jpg"></div>
 
-## Problem to solve
+## Problem to solve 🎯
 
 <h5 align="left">
 According to The New York Times, there is a significant inequality present in credit card rewards programs, where wealthy individuals enjoy luxurious perks while the less affluent bear the financial burden, perpetuating economic disparity. These disparities can indeed exacerbate the economic gap between affluent individuals who benefit from lavish perks and lower-income consumers who ultimately subsidize these rewards. We must advocate for reforms such as reducing interchange fees and promoting competition to ensure a fairer distribution of rewards and economic benefits. As a first step, I would analyze the current credit card rewards landscape in 2024, comparing each credit card's rewards, annual fees, and APIs from the top five banks in the U.S. This would enable middle or lower-class consumers to make informed decisions to maximize the benefits available to them when considering opening credit cards.
 </h5>
 
-### Summary of the Top 5 Banks in the U.S.
+### Summary of the Top 5 Banks in the U.S. 🏦
 | Ranking | Bank            | Head Quarter              | Total Assets  | Branches |
 | :-----: | :-------------- | :------------------------ | :------------ | :------- |
 | 1       | JPMorgan Chase  | New York, NY              | $3.3 trillion | 4,800+   |
@@ -23,11 +23,11 @@ According to The New York Times, there is a significant inequality present in cr
 
 </div>
 
-## Development Time
+## Development Time 👩🏻‍💻
 > **Computation:** 2024.04.27-28.
 
 
-## Live Demo
+## Live Demo 🎬
 
 > **Please click this link** :
 > 
@@ -51,7 +51,6 @@ According to The New York Times, there is a significant inequality present in cr
 ![Github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)             
 
 
----
 
 ---
 ## Key Feature 📦
@@ -66,7 +65,7 @@ According to The New York Times, there is a significant inequality present in cr
 > **- Coresponding CRUD:** 
 
 ---
-## Inspiration and Reference 
+## Inspiration and Reference 🔍
 > - [Jae Bratton, Nerdwallet, "15 Best Cash Back Credit Cards of May 2024"](https://www.nerdwallet.com/best/credit-cards/cash-back)
 > - [by Jeff Cotrupe, MongoDB, "Next Generation Mobile Banking"](https://www.mongodb.com/blog/post/next-generation-mobile-bank-current-using-mongodb-atlas-google-cloud-make-financial-services-accessible-affordable-all)
 > - [By Comparecredit, "Best Cash Back Credit Cards of April 2024"](https://www.comparecredit.com/credit-cards/best/cash-back/?utm_source=adwords&utm_campaign=9123840123&ad_group_id=97900334091&utm_content=643438196853&utm_medium=search&acquisition=prospect&ad_position=&network=g&ad_extension_id=&placement=&geolocation=9005864&kw=best%20cash%20back%20credit%20cards%202024&kwid=kwd-1929367132042&kwmt=e&product=credit_cards&glcid=CjwKCAjw57exBhAsEiwAaIxaZlfPWR-C-GeA-CWzFxZnUFve4xmce_waoeAOdSYlIN4rQcW13QOE1xoCvQYQAvD_BwE&gclid=CjwKCAjw57exBhAsEiwAaIxaZlfPWR-C-GeA-CWzFxZnUFve4xmce_waoeAOdSYlIN4rQcW13QOE1xoCvQYQAvD_BwE)
