@@ -20,9 +20,9 @@
 
 ## Inspiration and Reference 🔍
 > - [Jae Bratton, Nerdwallet, "15 Best Cash Back Credit Cards of May 2024"](https://www.nerdwallet.com/best/credit-cards/cash-back)
-> - [by Jeff Cotrupe, MongoDB, "Next Generation Mobile Banking"](https://www.mongodb.com/blog/post/next-generation-mobile-bank-current-using-mongodb-atlas-google-cloud-make-financial-services-accessible-affordable-all)
-> - [By Comparecredit, "Best Cash Back Credit Cards of April 2024"](https://www.comparecredit.com/credit-cards/best/cash-back/?utm_source=adwords&utm_campaign=9123840123&ad_group_id=97900334091&utm_content=643438196853&utm_medium=search&acquisition=prospect&ad_position=&network=g&ad_extension_id=&placement=&geolocation=9005864&kw=best%20cash%20back%20credit%20cards%202024&kwid=kwd-1929367132042&kwmt=e&product=credit_cards&glcid=CjwKCAjw57exBhAsEiwAaIxaZlfPWR-C-GeA-CWzFxZnUFve4xmce_waoeAOdSYlIN4rQcW13QOE1xoCvQYQAvD_BwE&gclid=CjwKCAjw57exBhAsEiwAaIxaZlfPWR-C-GeA-CWzFxZnUFve4xmce_waoeAOdSYlIN4rQcW13QOE1xoCvQYQAvD_BwE)
-> - [By Chenzi Xu and Jeffrey Reppucci, “The Dirty Little Secret of Credit Card Rewards Programs.” The New York Times, March 4, 2023](https://www.nytimes.com/2023/03/04/opinion/credit-card-rewards-points-poor-interchange-fees.html#:~:text=The%20poor%20are%20much%20less,qualify%20for%20a%20premium%20card.)
+> - [Jeff Cotrupe, MongoDB, "Next Generation Mobile Banking"](https://www.mongodb.com/blog/post/next-generation-mobile-bank-current-using-mongodb-atlas-google-cloud-make-financial-services-accessible-affordable-all)
+> - [Comparecredit, "Best Cash Back Credit Cards of April 2024"](https://www.comparecredit.com/credit-cards/best/cash-back/?utm_source=adwords&utm_campaign=9123840123&ad_group_id=97900334091&utm_content=643438196853&utm_medium=search&acquisition=prospect&ad_position=&network=g&ad_extension_id=&placement=&geolocation=9005864&kw=best%20cash%20back%20credit%20cards%202024&kwid=kwd-1929367132042&kwmt=e&product=credit_cards&glcid=CjwKCAjw57exBhAsEiwAaIxaZlfPWR-C-GeA-CWzFxZnUFve4xmce_waoeAOdSYlIN4rQcW13QOE1xoCvQYQAvD_BwE&gclid=CjwKCAjw57exBhAsEiwAaIxaZlfPWR-C-GeA-CWzFxZnUFve4xmce_waoeAOdSYlIN4rQcW13QOE1xoCvQYQAvD_BwE)
+> - [Chenzi Xu and Jeffrey Reppucci, “The Dirty Little Secret of Credit Card Rewards Programs.” The New York Times, March 4, 2023](https://www.nytimes.com/2023/03/04/opinion/credit-card-rewards-points-poor-interchange-fees.html#:~:text=The%20poor%20are%20much%20less,qualify%20for%20a%20premium%20card.)
 > - [Cassidy Horton and Lauren Graves, Forbes, "Largest Banks In The U.S. 2024"](https://www.forbes.com/advisor/banking/largest-banks-in-the-us/)
 
 
@@ -62,11 +62,11 @@
 ## API Documentation 🔗
 > This API provides endpoints to manage top five banks in the U.S. credit card information.
 
-> ### Create (POST)
+### Create (POST)
 > - **Endpoint**: `/api/nameofbank/cards`
 > - **Description**: Create a new credit card with the provided data.
 
-> ### Read (GET)
+### Read (GET)
 > #### Retrieve All Credit Cards
 > - **Endpoint**: `/api/nameofbank/cards`
 > - **Description**: Retrieve a list of all credit cards.
@@ -79,11 +79,11 @@
 > - **Endpoint**: `/api/nameofbank/cards/annual-fee/0`
 > - **Description**: Retrieve credit cards with no annual fee.
 
-> ### Update (PUT)
+### Update (PUT)
 > - **Endpoint**: `/api/nameofbank/cards/:id`
 > - **Description**: Update an existing credit card by its ID with the provided data.
 
-> ### Delete (DELETE)
+### Delete (DELETE)
 > - **Endpoint**: `/api/nameofbank/cards/:id`
 > - **Description**: Delete a credit card by its ID.
 
