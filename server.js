@@ -7,19 +7,19 @@ const PORT = process.env.PORT || 3000;
 const connecToDB = require("./config/connectToDB.js");
 
 // Models
-const JPMorganChase = require("./models/JPMorganChase");
+const JPMorganChase = require("./models/jpMorganChase.js");
 const BankofAmerica = require("./models/BankofAmerica");
-const WellsFargo = require("./models/WellsFargo");
+const WellsFargo = require("./models/wellsFargo.js");
 const CitiBank = require("./models/CitiBank");
-const USBank = require("./models/USBank");
+const USBank = require("./models/usBank.js");
 
 
 // Controller 
-const JPMC_Controller = require("./controller/JPMC_Controllers.js")
-const BoA_Controller = require("./controller/BoA_Controllers.js")
-const WF_Controller = require("./controller/WF_Controllers.js")
-const CB_Controller = require("./controller/CB_Controllers.js")
-const USB_Controller = require("./controller/USB_Controllers.js")
+const JPMC_Controller = require("./controller/jpMorganChase_Controllers.js")
+const BoA_Controller = require("./controller/bankofAmerica_Controllers.js")
+const WF_Controller = require("./controller/wellsFargo_Controllers.js")
+const CB_Controller = require("./controller/citiBank_Controllers.js")
+const USB_Controller = require("./controller/usBank_Controllers.js")
 
 
 const cors = require("cors");
@@ -36,15 +36,15 @@ app.get("/", (req, res) => {
 
 // ------------------------------ [ JPMorgan Chase ]
 
-app.get("/jpmcs", JPMC_Controller.fetchAllNotes);
+// app.get("/jpmcs", JPMC_Controller.fetchAllNotes);
 
-app.get("/jpmcs/:id", JPMC_Controller.fetchNote);
+// app.get("/jpmcs/:id", JPMC_Controller.fetchNote);
 
-app.post("/jpmcs", JPMC_Controller.createNote);
+// app.post("/jpmcs", JPMC_Controller.createNote);
 
-app.put("/jpmcs/:id", JPMC_Controller.updateNote);
+// app.put("/jpmcs/:id", JPMC_Controller.updateNote);
 
-app.delete("/jpmcs/:id", JPMC_Controller.deleteNote);
+// app.delete("/jpmcs/:id", JPMC_Controller.deleteNote);
 
 
 // ------------------------------ [ Bank of America ]

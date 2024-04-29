@@ -1,12 +1,30 @@
 const mongoose = require('mongoose');
 
-const USBankSchema = new mongoose.Schema({
-    nameOfBank: String, 
-    nameOfCard: String,
-    annualFee: String,
-    rewardRate: String,
-    introOffer: String,
-    recommendedCreditScore: String, 
+const usBankSchema = new mongoose.Schema({
+    nameOfBank: {
+        type: String,
+        required: true,
+    }, 
+    nameOfCard: {
+        type: String,
+        required: true,
+    },
+    annualFee: {
+        type: Number,
+        required: true,
+    },
+    rewardRate: {
+        type: Number,
+        required: true,
+    },
+    introOffer: {
+        type: Number,
+        required: true,
+    },
+    recommendedCreditScore: {
+        type: Number,
+        required: true,
+    },
 });
 
-module.exports = mongoose.model('USBank', USBankSchema);
+module.exports = mongoose.model('USBank', usBankSchema);
