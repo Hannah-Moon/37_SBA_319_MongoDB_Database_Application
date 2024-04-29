@@ -8,7 +8,7 @@
 
 > According to The New York Times, there is a significant inequality present in credit card rewards programs, where wealthy individuals enjoy luxurious perks while the less affluent bear the financial burden, perpetuating economic disparity. These disparities can indeed exacerbate the economic gap between affluent individuals who benefit from lavish perks and lower-income consumers who ultimately subsidize these rewards. We must advocate for reforms such as reducing interchange fees and promoting competition to ensure a fairer distribution of rewards and economic benefits. As a first step, I would analyze the current credit card rewards landscape in 2024, comparing each credit card's rewards, annual fees, and APIs from the top five banks in the U.S. This would enable middle or lower-class consumers to make informed decisions to maximize the benefits available to them when considering opening credit cards.
 
-### Summary of the Top 5 Banks in the U.S. 🏦
+## Summary of the Top 5 Banks in the U.S. 🏦
 | Ranking | Bank            | Head Quarter              | Total Assets  | Branches |
 | :-----: | :-------------- | :------------------------ | :------------ | :------- |
 | 1       | JPMorgan Chase  | New York, NY              | $3.3 trillion | 4,800+   |
@@ -17,7 +17,7 @@
 | 4       | Citibank        | New York, NY              | $1.6 trillion | 650+     |
 | 5       | U.S.Bank        | Minneapolis, Minnesota    | $657 billion  | 2,300+   |
 
----
+
 ## Inspiration and Reference 🔍
 > - [Jae Bratton, Nerdwallet, "15 Best Cash Back Credit Cards of May 2024"](https://www.nerdwallet.com/best/credit-cards/cash-back)
 > - [by Jeff Cotrupe, MongoDB, "Next Generation Mobile Banking"](https://www.mongodb.com/blog/post/next-generation-mobile-bank-current-using-mongodb-atlas-google-cloud-make-financial-services-accessible-affordable-all)
@@ -37,60 +37,56 @@
 
 
 ## Tools 🛠️
+> ### Development
+> ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+> ![Express](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)
+> ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+> ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+> ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
+> ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)
+> ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+> ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+> ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=Bootstrap&logoColor=white)
 
-### Development
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Express](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=Bootstrap&logoColor=white)
-
-### Environment
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white)
-![Github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)             
-
+> ### Environment
+> ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white)
+> ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white)
+> ![Github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)             
 
 
----
+
 ## Key Feature 📦
-
 > **- Users can pull zero annual fee credit card.** <br>
 
 ---
 ## API Documentation 🔗
-This API provides endpoints to manage top five banks in the U.S. credit card information.
+> This API provides endpoints to manage top five banks in the U.S. credit card information.
 
-### Create (POST)
-- **Endpoint**: `/api/nameofbank/cards`
-- **Description**: Create a new credit card with the provided data.
+> ### Create (POST)
+> - **Endpoint**: `/api/nameofbank/cards`
+> - **Description**: Create a new credit card with the provided data.
 
-### Read (GET)
-#### Retrieve All Credit Cards
-- **Endpoint**: `/api/nameofbank/cards`
-- **Description**: Retrieve a list of all credit cards.
+> ### Read (GET)
+> #### Retrieve All Credit Cards
+> - **Endpoint**: `/api/nameofbank/cards`
+> - **Description**: Retrieve a list of all credit cards.
 
-#### Retrieve a Specific Bank of America Credit Card
-- **Endpoint**: `/api/nameofbank/cards/:id`
-- **Description**: Retrieve a specific credit card by its ID.
+> #### Retrieve a Specific BCredit Card
+> - **Endpoint**: `/api/nameofbank/cards/:id`
+> - **Description**: Retrieve a specific credit card by its ID.
 
-#### Retrieve Bank of America Credit Cards with 0 Annual Fee
-- **Endpoint**: `/api/nameofbank/cards/annual-fee/0`
-- **Description**: Retrieve credit cards with no annual fee.
+> #### Retrieve Credit Cards with 0 Annual Fee
+> - **Endpoint**: `/api/nameofbank/cards/annual-fee/0`
+> - **Description**: Retrieve credit cards with no annual fee.
 
-### Update (PUT)
-- **Endpoint**: `/api/nameofbank/cards/:id`
-- **Description**: Update an existing credit card by its ID with the provided data.
+> ### Update (PUT)
+> - **Endpoint**: `/api/nameofbank/cards/:id`
+> - **Description**: Update an existing credit card by its ID with the provided data.
 
-### Delete (DELETE)
-- **Endpoint**: `/api/nameofbank/cards/:id`
-- **Description**: Delete a credit card by its ID.
+> ### Delete (DELETE)
+> - **Endpoint**: `/api/nameofbank/cards/:id`
+> - **Description**: Delete a credit card by its ID.
 
----
 ## Requirement ✅
 
 | Status    | Requirement                  | Weight    | 
