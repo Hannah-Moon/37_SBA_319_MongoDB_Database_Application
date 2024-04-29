@@ -15,11 +15,11 @@ const USBank = require("./models/usBank.js");
 
 
 // Controller 
-const JPMC_Controller = require("./controller/jpMorganChase_Controllers.js")
+const JPMC_Controller = require("./controller/jpMorganChaseControllers.js")
 const BoA_Controller = require("./controller/bankofAmerica_Controllers.js")
-const WF_Controller = require("./controller/wellsFargo_Controllers.js")
-const CB_Controller = require("./controller/citiBank_Controllers.js")
-const USB_Controller = require("./controller/usBank_Controllers.js")
+const WF_Controller = require("./controller/wellsFargoControllers.js")
+const CB_Controller = require("./controller/citiBankControllers.js")
+const USB_Controller = require("./controller/usBankControllers.js")
 
 
 const cors = require("cors");
