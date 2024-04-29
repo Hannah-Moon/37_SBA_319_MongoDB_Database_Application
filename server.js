@@ -8,21 +8,22 @@ const connecToDB = require("./config/connectToDB.js");
 
 // Models
 const JPMorganChase = require("./models/jpMorganChase.js");
-const BankofAmerica = require("./models/BankofAmerica");
+const BankofAmerica = require("./models/bankofAmerica");
 const WellsFargo = require("./models/wellsFargo.js");
 const CitiBank = require("./models/CitiBank");
 const USBank = require("./models/usBank.js");
 
 
 // Controller 
-const JPMC_Controller = require("./controller/jpMorganChaseControllers.js")
-const BoA_Controller = require("./controller/bankofAmerica_Controllers.js")
-const WF_Controller = require("./controller/wellsFargoControllers.js")
-const CB_Controller = require("./controller/citiBankControllers.js")
-const USB_Controller = require("./controller/usBankControllers.js")
+const JPMC_Controller = require("./controller/jpMorganChaseController.js")
+const BoA_Controller = require("./controller/bankofAmericaController.js")
+const WF_Controller = require("./controller/wellsFargoController.js")
+const CB_Controller = require("./controller/citiBankController.js")
+const USB_Controller = require("./controller/usBankController.js")
 
 
 const cors = require("cors");
+const bankofAmerica = require("./models/bankofAmerica");
 
 app.use(express.urlencoded());    /// --> We need to add this line of code everytime to POST the data on POSTMAN. 
 app.use(express.json());
@@ -36,19 +37,19 @@ app.get("/", (req, res) => {
 
 // ------------------------------ [ JPMorgan Chase ]
 
-// app.get("/jpmcs", JPMC_Controller.fetchAllNotes);
-
-// app.get("/jpmcs/:id", JPMC_Controller.fetchNote);
-
-// app.post("/jpmcs", JPMC_Controller.createNote);
-
-// app.put("/jpmcs/:id", JPMC_Controller.updateNote);
-
-// app.delete("/jpmcs/:id", JPMC_Controller.deleteNote);
 
 
 // ------------------------------ [ Bank of America ]
 
+app.get("/bankofAmericas", bankofAmericaController.fetchAllNotes);
+
+app.get("/bankofAmericas/:id", bankofAmericaController.fetchNote);
+
+app.post("/bankofAmericas", bankofAmericaController.createNote);
+
+app.put("/bankofAmericas/:id", bankofAmericaController.updateNote);
+
+app.delete("/bankofAmericas/:id", bankofAmericaController.deleteNote);
 
 
 // ------------------------------ [ WellsFargo ]
