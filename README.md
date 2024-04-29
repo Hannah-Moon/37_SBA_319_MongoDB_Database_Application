@@ -1,15 +1,12 @@
 # SBA 319: MongoDB Database Application <br/>
 ### : Is this the best credit card for me in 2024?
 
-
 <div align="center">
 <img width="500" alt="image" src="assets/creditCard.jpg"></div>
 
 ## Problem to solve 🎯
 
-<h5 align="left">
-According to The New York Times, there is a significant inequality present in credit card rewards programs, where wealthy individuals enjoy luxurious perks while the less affluent bear the financial burden, perpetuating economic disparity. These disparities can indeed exacerbate the economic gap between affluent individuals who benefit from lavish perks and lower-income consumers who ultimately subsidize these rewards. We must advocate for reforms such as reducing interchange fees and promoting competition to ensure a fairer distribution of rewards and economic benefits. As a first step, I would analyze the current credit card rewards landscape in 2024, comparing each credit card's rewards, annual fees, and APIs from the top five banks in the U.S. This would enable middle or lower-class consumers to make informed decisions to maximize the benefits available to them when considering opening credit cards.
-</h5>
+> According to The New York Times, there is a significant inequality present in credit card rewards programs, where wealthy individuals enjoy luxurious perks while the less affluent bear the financial burden, perpetuating economic disparity. These disparities can indeed exacerbate the economic gap between affluent individuals who benefit from lavish perks and lower-income consumers who ultimately subsidize these rewards. We must advocate for reforms such as reducing interchange fees and promoting competition to ensure a fairer distribution of rewards and economic benefits. As a first step, I would analyze the current credit card rewards landscape in 2024, comparing each credit card's rewards, annual fees, and APIs from the top five banks in the U.S. This would enable middle or lower-class consumers to make informed decisions to maximize the benefits available to them when considering opening credit cards.
 
 ### Summary of the Top 5 Banks in the U.S. 🏦
 | Ranking | Bank            | Head Quarter              | Total Assets  | Branches |
@@ -28,9 +25,8 @@ According to The New York Times, there is a significant inequality present in cr
 
 
 ## Live Demo 🎬
-
 > **Please click this link** :
-> 
+
 
 ## Tools 🛠️
 
@@ -57,7 +53,6 @@ According to The New York Times, there is a significant inequality present in cr
 
 > **- Users can input their answers using the structured STAR method.** <br>
 
-
 ---
 ## API Routes 🔗
 
@@ -69,7 +64,8 @@ According to The New York Times, there is a significant inequality present in cr
 > - [Jae Bratton, Nerdwallet, "15 Best Cash Back Credit Cards of May 2024"](https://www.nerdwallet.com/best/credit-cards/cash-back)
 > - [by Jeff Cotrupe, MongoDB, "Next Generation Mobile Banking"](https://www.mongodb.com/blog/post/next-generation-mobile-bank-current-using-mongodb-atlas-google-cloud-make-financial-services-accessible-affordable-all)
 > - [By Comparecredit, "Best Cash Back Credit Cards of April 2024"](https://www.comparecredit.com/credit-cards/best/cash-back/?utm_source=adwords&utm_campaign=9123840123&ad_group_id=97900334091&utm_content=643438196853&utm_medium=search&acquisition=prospect&ad_position=&network=g&ad_extension_id=&placement=&geolocation=9005864&kw=best%20cash%20back%20credit%20cards%202024&kwid=kwd-1929367132042&kwmt=e&product=credit_cards&glcid=CjwKCAjw57exBhAsEiwAaIxaZlfPWR-C-GeA-CWzFxZnUFve4xmce_waoeAOdSYlIN4rQcW13QOE1xoCvQYQAvD_BwE&gclid=CjwKCAjw57exBhAsEiwAaIxaZlfPWR-C-GeA-CWzFxZnUFve4xmce_waoeAOdSYlIN4rQcW13QOE1xoCvQYQAvD_BwE)
-> - [By Chenzi Xu and Jeffrey Reppucci, “The Dirty Little Secret of Credit Card Rewards Programs.” The New York Times, March 4, 2023, ](https://www.nytimes.com/2023/03/04/opinion/credit-card-rewards-points-poor-interchange-fees.html#:~:text=The%20poor%20are%20much%20less,qualify%20for%20a%20premium%20card.)
+> - [By Chenzi Xu and Jeffrey Reppucci, “The Dirty Little Secret of Credit Card Rewards Programs.” The New York Times, March 4, 2023](https://www.nytimes.com/2023/03/04/opinion/credit-card-rewards-points-poor-interchange-fees.html#:~:text=The%20poor%20are%20much%20less,qualify%20for%20a%20premium%20card.)
+> - [Cassidy Horton and Lauren Graves, Forbes, "Largest Banks In The U.S. 2024"](https://www.forbes.com/advisor/banking/largest-banks-in-the-us/)
 
 
 ---

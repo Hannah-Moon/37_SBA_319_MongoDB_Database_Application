@@ -1,50 +1,69 @@
-// Terminal commands
-// ---------------------------------------------------------------
-// Initialize a new Node.js project and create a package.json file
-// The -y flag automatically answers "yes" to all prompts, using default values
-// npm init -y
+require("dotenv").config();
 
-// Install the required dependencies:
-// - express: Web framework for Node.js
-// - dotenv: Loads environment variables from a .env file
-// - cors: Middleware for handling Cross-Origin Resource Sharing (CORS)
-// - mongoose: MongoDB object modeling tool for Node.js
-// npm i express dotenv cors mongoose
-
-// Start the Node.js application using Nodemon in development mode
-// Nodemon automatically restarts the server when changes are detected
-// nodemon run dev
-
-// Load environment variables from .env file
-require('dotenv').config();
-
-// Import the Express web framework
-const express = require('express');
-
-// Create an instance of the Express application
+const express = require("express");
 const app = express();
-
-// Set the port number for the server, using the value from the environment 
-// variable PORT or defaulting to 3000
 const PORT = process.env.PORT || 3000;
 
-// Import the function to connect to the MongoDB database
-const connectToDb = require('./config/connectToDB');
+const connecToDB = require("./config/connectToDB.js");
 
-// Import the CORS middleware
-const cors = require('cors');
+// Models
+const JPMorganChase = require("./models/JPMorganChase");
+const BankofAmerica = require("./models/BankofAmerica");
+const WellsFargo = require("./models/WellsFargo");
+const CitiBank = require("./models/CitiBank");
+const USBank = require("./models/USBank");
 
-// Parse incoming request bodies in JSON format
+
+// Controller 
+const JPMC_Controller = require("./controller/JPMC_Controllers.js")
+const BoA_Controller = require("./controller/BoA_Controllers.js")
+const WF_Controller = require("./controller/WF_Controllers.js")
+const CB_Controller = require("./controller/CB_Controllers.js")
+const USB_Controller = require("./controller/USB_Controllers.js")
+
+
+const cors = require("cors");
+
+app.use(express.urlencoded());    /// --> We need to add this line of code everytime to POST the data on POSTMAN. 
 app.use(express.json());
 
-// Enable CORS (Cross-Origin Resource Sharing) for all routes
 app.use(cors());
+connecToDB();
 
-// Call the function to connect to the MongoDB database
-connectToDb();
+app.get("/", (req, res) => {
+    res.send("This is a Landing Page");
+})
 
-// Start the Express server and listen on the specified port
+// ------------------------------ [ JPMorgan Chase ]
+
+app.get("/jpmcs", JPMC_Controller.fetchAllNotes);
+
+app.get("/jpmcs/:id", JPMC_Controller.fetchNote);
+
+app.post("/jpmcs", JPMC_Controller.createNote);
+
+app.put("/jpmcs/:id", JPMC_Controller.updateNote);
+
+app.delete("/jpmcs/:id", JPMC_Controller.deleteNote);
+
+
+// ------------------------------ [ Bank of America ]
+
+
+
+// ------------------------------ [ WellsFargo ]
+
+
+
+// ------------------------------ [ Citi Bank ]
+
+
+
+// ------------------------------ [ U.S.Bank ]
+
+
+
+
 app.listen(PORT, () => {
-    // Log a message to the console when the server starts running
     console.log(`Express Server Listening on port num: ${PORT}`);
 });
