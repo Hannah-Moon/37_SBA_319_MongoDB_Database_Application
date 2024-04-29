@@ -66,10 +66,10 @@ app.delete('/citiBank/:id', citiBankController.deleteCitiBankCard);
 
 // ------------------------------ [ U.S.Bank ]
 app.get('/usBank', usBankController.fetchAllUSBanks);
-app.get('/usBank', usBankController.fetchUSBank);
+app.get('/usBank/:id', usBankController.fetchUSBank);
 app.post('/usBank', usBankController.createUSBankCard);
-app.put('/usBank', usBankController.updateUSBankCard);
-app.delete('/usBank', usBankController.deleteUSBankCard);
+app.put('/usBank/:id', usBankController.updateUSBankCard);
+app.delete('/usBank/:id', usBankController.deleteUSBankCard);
 
 
 app.listen(PORT, () => {

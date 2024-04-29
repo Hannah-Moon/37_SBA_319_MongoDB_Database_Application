@@ -29,7 +29,7 @@
 </div>
 
 ## Development Time 👩🏻‍💻
-> **Computation:** 2024.04.27-28.
+> **Computation:** 2024.04.28.-29.
 
 
 ## Live Demo 🎬
@@ -58,34 +58,44 @@
 ## Key Feature 📦
 > **- Users can pull zero annual fee credit card.** <br>
 
----
-## API Documentation 🔗
-> This API provides endpoints to manage top five banks in the U.S. credit card information.
+```
 
-### Create (POST)
-> - **Endpoint**: `/api/nameofbank/cards`
-> - **Description**: Create a new credit card with the provided data.
+// ------------------------------ [ JPMorgan Chase ]
+app.get('/jpMorganChase', jpMorganChaseController.fetchAllJPMorganChases);
+app.get('/jpMorganChase/:id', jpMorganChaseController.fetchJPMorganChase);
+app.post('/jpMorganChase', jpMorganChaseController.createJPMorganChaseCard);
+app.put('/jpMorganChase/:id', jpMorganChaseController.updateJPMorganChaseCard);
+app.delete('/jpMorganChase/:id', jpMorganChaseController.deleteJPMorganChaseCard);
 
-### Read (GET)
-> #### Retrieve All Credit Cards
-> - **Endpoint**: `/api/nameofbank/cards`
-> - **Description**: Retrieve a list of all credit cards.
+// ------------------------------ [ Bank of America ]
+app.get('/bankofAmerica', bankofAmericaController.fetchAllBankofAmericas);
+app.get('/bankofAmerica/:id', bankofAmericaController.fetchBankofAmerica);
+app.post('/bankofAmerica', bankofAmericaController.createBankofAmericaCard);
+app.put('/bankofAmerica/:id', bankofAmericaController.updateBankofAmericaCard);
+app.delete('/bankofAmerica/:id', bankofAmericaController.deleteBankofAmericaCard);
 
-> #### Retrieve a Specific BCredit Card
-> - **Endpoint**: `/api/nameofbank/cards/:id`
-> - **Description**: Retrieve a specific credit card by its ID.
+// ------------------------------ [ WellsFargo ]
+app.get('/wellsFargo', wellsFargoController.fetchAllWellsFargos);
+app.get('/wellsFargo/:id', wellsFargoController.fetchWellsFargo);
+app.post('/wellsFargo', wellsFargoController.createWellsFargoCard);
+app.put('/wellsFargo/:id', wellsFargoController.updateWellsFargoCard);
+app.delete('/wellsFargo/:id', wellsFargoController.deleteWellsFargoCard);
 
-> #### Retrieve Credit Cards with 0 Annual Fee
-> - **Endpoint**: `/api/nameofbank/cards/annual-fee/0`
-> - **Description**: Retrieve credit cards with no annual fee.
+// ------------------------------ [ Citi Bank ]
+app.get('/citiBank', citiBankController.fetchAllCitiBanks);
+app.get('/citiBank/:id', citiBankController.fetchCitiBank);
+app.post('/citiBank', citiBankController.createCitiBankCard);
+app.put('/citiBank/:id', citiBankController.updateCitiBankCard);
+app.delete('/citiBank/:id', citiBankController.deleteCitiBankCard);
 
-### Update (PUT)
-> - **Endpoint**: `/api/nameofbank/cards/:id`
-> - **Description**: Update an existing credit card by its ID with the provided data.
+// ------------------------------ [ U.S.Bank ]
+app.get('/usBank', usBankController.fetchAllUSBanks);
+app.get('/usBank/:id', usBankController.fetchUSBank);
+app.post('/usBank', usBankController.createUSBankCard);
+app.put('/usBank/:id', usBankController.updateUSBankCard);
+app.delete('/usBank/:id', usBankController.deleteUSBankCard);
+```
 
-### Delete (DELETE)
-> - **Endpoint**: `/api/nameofbank/cards/:id`
-> - **Description**: Delete a credit card by its ID.
 
 ## Requirement ✅
 
