@@ -1,18 +1,42 @@
+// Load variables from .env
 require("dotenv").config();
 
+// Import express 
 const express = require("express");
+
+// Create express instance
 const app = express();
+
+// Set port number
 const PORT = process.env.PORT || 3000;
 
+// Import function to connect to DB
 const connecToDB = require("./config/connectToDB.js");
 
-// Models
-const JPMorganChase = require("./models/jpMorganChase.js");
-const BankofAmerica = require("./models/bankofAmerica.js");
-const WellsFargo = require("./models/wellsFargo.js");
-const CitiBank = require("./models/citiBank.js");
-const USBank = require("./models/usBank.js");
+// Import CORS middleware
+const cors = require("cors");
 
+// app.use(express.urlencoded());    /// --> We need to add this line of code everytime to POST the data on POSTMAN. 
+
+// Parse incoming request bodies in JSON format
+app.use(express.json());
+
+// Import CORS middleware
+app.use(cors());
+
+// Connect to DB
+connecToDB();
+
+app.get("/", (req, res) => {
+    res.send("This is a Landing Page");
+});
+
+// Models
+const JPMorganChase = require('./models/jpMorganChase.js');
+const BankofAmerica = require('./models/bankofAmerica.js');
+const WellsFargo = require('./models/wellsFargo.js');
+const CitiBank = require('./models/citiBank.js');
+const USBank = require('./models/usBank.js');
 
 // Controller 
 const jpMorganChaseController = require("./controllers/jpMorganChaseController.js");
@@ -21,21 +45,7 @@ const wellsFargoController = require("./controllers/wellsFargoController.js");
 const citiBankController = require("./controllers/citiBankController.js");
 const usBankController = require("./controllers/usBankController.js");
 
-
-
-const cors = require("cors");
-// const jpMorganChase = require("./models/jpMorganChase.js);
-
-app.use(express.urlencoded());    /// --> We need to add this line of code everytime to POST the data on POSTMAN. 
-app.use(express.json());
-app.use(cors());
-connecToDB();
-
-app.get("/", (req, res) => {
-    res.send("This is a Landing Page");
-});
-
-
+// Define routes for a each bank's creddit card
 // ------------------------------ [ JPMorgan Chase ]
 app.get('/jpMorganChase', jpMorganChaseController.fetchAllJPMorganChases);
 app.get('/jpMorganChase/:id', jpMorganChaseController.fetchJPMorganChase);

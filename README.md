@@ -117,7 +117,7 @@ app.delete('/usBank/:id', usBankController.deleteUSBankCard);
 |:white_check_mark:| Commit frequently to the git repository. | 5% |
 |:white_check_mark:| Level of effort displayed in creativity and user experience. | 5% |
 
-## Bonus 🎁🖨
+## Bonus 🎁
 
 | Status    | Requirement                  | Weight    | 
 |-----------|------------------------------|-----------|
