@@ -31,12 +31,12 @@ app.get("/", (req, res) => {
     res.send("This is a Landing Page");
 });
 
-// Models
-const JPMorganChase = require('./models/jpMorganChase.js');
-const BankofAmerica = require('./models/bankofAmerica.js');
-const WellsFargo = require('./models/wellsFargo.js');
-const CitiBank = require('./models/citiBank.js');
-const USBank = require('./models/usBank.js');
+// Models 
+const jpMorganChase = require('./models/jpMorganChase.js');
+const bankofAmerica = require('./models/bankofAmerica.js');
+const wellsFargo = require('./models/wellsFargo.js');
+const citiBank = require('./models/citiBank.js');
+const usBank = require('./models/usBank.js');
 
 // Controller 
 const jpMorganChaseController = require("./controllers/jpMorganChaseController.js");
@@ -47,39 +47,39 @@ const usBankController = require("./controllers/usBankController.js");
 
 // Define routes for a each bank's creddit card
 // ------------------------------ [ JPMorgan Chase ]
-app.get('/jpMorganChase', jpMorganChaseController.fetchAllJPMorganChases);
-app.get('/jpMorganChase/:id', jpMorganChaseController.fetchJPMorganChase);
-app.post('/jpMorganChase', jpMorganChaseController.createJPMorganChaseCard);
-app.put('/jpMorganChase/:id', jpMorganChaseController.updateJPMorganChaseCard);
-app.delete('/jpMorganChase/:id', jpMorganChaseController.deleteJPMorganChaseCard);
+app.get('/jpmorganchase', jpMorganChaseController.fetchAllJPMorganChases);
+app.get('/jpmorganchase/:id', jpMorganChaseController.fetchJPMorganChase);
+app.post('/jpmorganchase', jpMorganChaseController.createJPMorganChaseCard);
+app.put('/jpmorganchase/:id', jpMorganChaseController.updateJPMorganChaseCard);
+app.delete('/jpmorganchase/:id', jpMorganChaseController.deleteJPMorganChaseCard);
 
 // ------------------------------ [ Bank of America ]
-app.get('/bankofAmerica', bankofAmericaController.fetchAllBankofAmericas);
-app.get('/bankofAmerica/:id', bankofAmericaController.fetchBankofAmerica);
-app.post('/bankofAmerica', bankofAmericaController.createBankofAmericaCard);
-app.put('/bankofAmerica/:id', bankofAmericaController.updateBankofAmericaCard);
-app.delete('/bankofAmerica/:id', bankofAmericaController.deleteBankofAmericaCard);
+app.get('/bankofamerica', bankofAmericaController.fetchAllBankofAmericas);
+app.get('/bankofamerica/:id', bankofAmericaController.fetchBankofAmerica);
+app.post('/bankofamerica', bankofAmericaController.createBankofAmericaCard);
+app.put('/bankofamerica/:id', bankofAmericaController.updateBankofAmericaCard);
+app.delete('/bankofamerica/:id', bankofAmericaController.deleteBankofAmericaCard);
 
 // ------------------------------ [ WellsFargo ]
-app.get('/wellsFargo', wellsFargoController.fetchAllWellsFargos);
-app.get('/wellsFargo/:id', wellsFargoController.fetchWellsFargo);
-app.post('/wellsFargo', wellsFargoController.createWellsFargoCard);
-app.put('/wellsFargo/:id', wellsFargoController.updateWellsFargoCard);
-app.delete('/wellsFargo/:id', wellsFargoController.deleteWellsFargoCard);
+app.get('/wellsfargo', wellsFargoController.fetchAllWellsFargos);
+app.get('/wellsfargo/:id', wellsFargoController.fetchWellsFargo);
+app.post('/wellsfargo', wellsFargoController.createWellsFargoCard);
+app.put('/wellsfargo/:id', wellsFargoController.updateWellsFargoCard);
+app.delete('/wellsfargo/:id', wellsFargoController.deleteWellsFargoCard);
 
 // ------------------------------ [ Citi Bank ]
-app.get('/citiBank', citiBankController.fetchAllCitiBanks);
-app.get('/citiBank/:id', citiBankController.fetchCitiBank);
-app.post('/citiBank', citiBankController.createCitiBankCard);
-app.put('/citiBank/:id', citiBankController.updateCitiBankCard);
-app.delete('/citiBank/:id', citiBankController.deleteCitiBankCard);
+app.get('/citibank', citiBankController.fetchAllCitiBanks);
+app.get('/citibank/:id', citiBankController.fetchCitiBank);
+app.post('/citibank', citiBankController.createCitiBankCard);
+app.put('/citibank/:id', citiBankController.updateCitiBankCard);
+app.delete('/citibank/:id', citiBankController.deleteCitiBankCard);
 
 // ------------------------------ [ U.S.Bank ]
-app.get('/usBank', usBankController.fetchAllUSBanks);
-app.get('/usBank/:id', usBankController.fetchUSBank);
-app.post('/usBank', usBankController.createUSBankCard);
-app.put('/usBank/:id', usBankController.updateUSBankCard);
-app.delete('/usBank/:id', usBankController.deleteUSBankCard);
+app.get('/usbank', usBankController.fetchAllUSBanks);
+app.get('/usbank/:id', usBankController.fetchUSBank);
+app.post('/usbank', usBankController.createUSBankCard);
+app.put('/usbank/:id', usBankController.updateUSBankCard);
+app.delete('/usbank/:id', usBankController.deleteUSBankCard);
 
 
 app.listen(PORT, () => {
