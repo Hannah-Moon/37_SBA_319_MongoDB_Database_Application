@@ -16,7 +16,7 @@ const connecToDB = require("./config/connectToDB.js");
 // Import CORS middleware
 const cors = require("cors");
 
-// app.use(express.urlencoded());    /// --> We need to add this line of code everytime to POST the data on POSTMAN. 
+app.use(express.urlencoded());    /// --> We need to add this line of code everytime to POST the data on POSTMAN. 
 
 // Parse incoming request bodies in JSON format
 app.use(express.json());
