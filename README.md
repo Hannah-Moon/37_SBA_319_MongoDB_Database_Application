@@ -33,7 +33,8 @@
 
 
 ## Live Demo 🎬
-> **Please click this link** :
+<div align="center">
+<img width="500" alt="image" src="assets/mongoDB.gif"></div>
 
 
 ## Tools 🛠️
@@ -59,7 +60,7 @@
 > **- Users can pull zero annual fee credit card.** <br>
 
 ## End points 🔚
-> - I chosen lowercase route paths, which is consistent and adheres to common conventions. 
+> **- I choose lowercase route paths, which is consistent and adheres to common conventions.** 
 
 ```
 // Define routes for a each bank's credit card
