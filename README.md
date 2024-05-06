@@ -34,7 +34,7 @@
 
 ## Live Demo 🎬
 <div align="center">
-<img width="500" alt="image" src="assets/mongoDB.gif"></div>
+<img alt="image" src="assets/mongoDB.gif"></div>
 
 
 ## Tools 🛠️
